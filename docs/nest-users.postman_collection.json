@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "11e9b8b7-4ec3-48dc-a868-ba25e9b72a36",
+		"name": "nest-users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6472495"
+	},
+	"item": [
+		{
+			"name": "New User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Eduardo Wosgrau dos Santos\",\r\n  \"addresses\": [\r\n    {\r\n      \"street\": \"Avenida Brasil\",\r\n      \"number\": \"1578\",\r\n      \"complement\": \"Apto 101\",\r\n      \"neighborhood\": \"Bela Vista\",\r\n      \"city\": \"São Paulo\",\r\n      \"state\": \"SP\",\r\n      \"zipCode\": \"01310-200\"\r\n    },\r\n    {\r\n      \"street\": \"Rua das Flores\",\r\n      \"number\": \"234\",\r\n      \"complement\": \"Sala 202\",\r\n      \"neighborhood\": \"Jardim América\",\r\n      \"city\": \"Rio de Janeiro\",\r\n      \"state\": \"RJ\",\r\n      \"zipCode\": \"22040-010\"\r\n    }\r\n  ],\r\n  \"email\": \"eduardo.wosgrau@gmail.com\",\r\n  \"birthDate\": \"1994-10-22T00:00:00.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/66e2409298b1b213c7d5a161",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"66e2409298b1b213c7d5a161"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Eduardo Wosgrau dos Santos\",\r\n  \"addresses\": [\r\n    {\r\n      \"street\": \"Avenida BrasiL\",\r\n      \"number\": \"1578\",\r\n      \"complement\": \"Apto 101\",\r\n      \"neighborhood\": \"Bela Vista\",\r\n      \"city\": \"São Paulo\",\r\n      \"state\": \"SP\",\r\n      \"zipCode\": \"01310-200\"\r\n    },\r\n    {\r\n      \"street\": \"Rua das Flores\",\r\n      \"number\": \"234\",\r\n      \"complement\": \"Sala 202\",\r\n      \"neighborhood\": \"Jardim América\",\r\n      \"city\": \"Rio de Janeiro\",\r\n      \"state\": \"RJ\",\r\n      \"zipCode\": \"22040-010\"\r\n    }\r\n  ],\r\n  \"email\": \"eduardo.wosgrau@gmail.com\",\r\n  \"birthDate\": \"1994-10-22T00:00:00.000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/66e2de80e13ada0ebf5ad444",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"66e2de80e13ada0ebf5ad444"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/66e2db72330f1e4687fff9ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"66e2db72330f1e4687fff9ec"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
